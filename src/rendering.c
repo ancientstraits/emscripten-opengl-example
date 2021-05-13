@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <GL/glfw3.h>
+#include <GLFW/glfw3.h>
 
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
