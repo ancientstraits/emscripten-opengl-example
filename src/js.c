@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <GL/glfw.h>
+#include <GL/glfw3.h>
 #include <emscripten/emscripten.h>
 
 typedef void (*renderFunc)();
