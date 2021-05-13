@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <GL/glfw3.h>
+#include <GLFW/glfw3.h>
 
 typedef void (*renderFunc)();
 
