@@ -8,7 +8,7 @@ build/native/qafoo: src/qafoo.c src/native.c src/rendering.c
 	fi
 
 build/js/index.html build/js/qafoo.data: src/qafoo.c src/js.c src/rendering.c
-	emcc $^ -I /usr/local/include -o build/js/index.html -s LEGACY_GL_EMULATION=1 -O2 --preload-file data/qafoo.png
+	emcc $^ -I /usr/include -o build/js/index.html -s LEGACY_GL_EMULATION=1 -O2 --preload-file data/qafoo.png
 
 .PHONY: clean
 clean:
