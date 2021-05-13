@@ -7,8 +7,8 @@ build/native/qafoo: src/qafoo.c src/native.c src/rendering.c
 		gcc $^ -lglfw -lSDL -lSDL_image -lGL -lGLU -o build/native/qafoo; \
 	fi
 
-build/js/qafoo.js build/js/qafoo.data: src/qafoo.c src/js.c src/rendering.c
-	emcc $^ -I /usr/local/include -o build/js/qafoo.js -s LEGACY_GL_EMULATION=1 -O2 --preload-file data/qafoo.png
+build/js/index.html build/js/qafoo.data: src/qafoo.c src/js.c src/rendering.c
+	emcc $^ -I /usr/local/include -o build/js/index.html -s LEGACY_GL_EMULATION=1 -O2 --preload-file data/qafoo.png
 
 .PHONY: clean
 clean:
